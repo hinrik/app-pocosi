@@ -446,7 +446,7 @@ sub ircd_plugin_status {
 sub ircd_shutdown {
     my ($self) = $_[OBJECT];
     $self->_event_debug([@_[ARG0..$#_]], 'IRCD_shutdown') if $self->{trace};
-    $self->_status('normal', 'IRC component shut down');
+    $self->_status('normal', 'IRCd component shut down');
     return;
 }
 
@@ -569,7 +569,7 @@ L<POE::Component::Server::IRC|POE::Component::Server::IRC> instance.
 =item * Offers a user friendly way to pass arguments to POE::Component::Server::IRC
 
 =item * Has an interactive mode where you can issue issue commands and
-call methods on the IRC component(s).
+call methods on the IRCd component.
 
 =back
 
@@ -714,7 +714,7 @@ Here is some example output from the program:
  ^C2011-05-22 15:30:18 Exiting due to SIGINT
  2011-05-22 15:30:18 Deleted plugin OperServ_1
  2011-05-22 15:30:18 Deleted plugin PocosiStatus_1
- 2011-05-22 15:30:18 IRC component shut down
+ 2011-05-22 15:30:18 IRCd component shut down
 
 =head1 AUTHOR
 
