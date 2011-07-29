@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Strip the unhelpful "at FOO line BAR" suffix from eval errors in the
+      console UI
 
 0.02  Wed May 25 06:24:58 GMT 2011
     - Replaced the IO wrapping code in ReadLine.pm with IO::WrapOutput
