@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.03  Sat Jul 30 00:14:24 GMT 2011
     - Strip the unhelpful "at FOO line BAR" suffix from eval errors in the
       console UI
     - Test isa() after creating components and plugins
